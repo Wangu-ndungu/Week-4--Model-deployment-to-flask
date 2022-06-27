@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+
+<head><title>Algorithm that predicts Car price</title></head>
+<h1>Algorithm that predicts car prices</h1>
+<body>
+<p>Risk symboling for the car:</p>
+<form action="{{ url_for('predict')}}"method="post">
+         <select name = "dropdown">
+            <option value = "3">3</option>
+            <option value = "2">2</option>
+            <option value = "1">1</option>
+            <option value = "0">0</option>
+            <option value = "-1">-1</option>
+            <option value = "-2">-2</option>
+             <option value = "-3">-3</option>
+         </select>
+ 
+<p>Car Make:</p>
+
+         <select name = "dropdown">
+            <option value = "toyota">Toyota</option>
+            <option value = "nissan">Nissan</option>
+            <option value = "mazda">Mazda</option>
+            <option value = "mitsubishi">Mitsubishi</option>
+            <option value = "honda">Honda</option>
+            <option value = "subaru">Subaru</option>
+            <option value = "volvo">Volvo</var></option>
+            <option value = "peugeot">Peugeot</option>
+            <option value = "volkswagen">Volkswagen</option>
+            <option value = "dodge">Dodge</option>
+            <option value = "buick">Buick</option>
+            <option value = "bmw">BMW</option>
+            <option value = "plymouth">Plymouth</option>
+            <option value = "audi">Audi</option>
+            <option value = "saab">Saab</option>
+            <option value = "isuzu">Isuzu</option>
+            <option value = "porshe">Porshe</option>
+            <option value = "jaguar">Jaguar</option>
+            <option value = "alfa-romero">Alfa-romero</option>
+            <option value = "chevrolet">Chevrolet</option>
+            <option value = "Renault">Renault</option>
+
+            
+         </select>
+ 
+ 
+ <p>Fuel type:</p>
+ 
+         <select name = "dropdown">
+            <option value = "gas">Gas</option>
+            <option value = "fuel">Fuel</option>
+         </select>
+ 
+ <p>Aspiration:</p>
+ 
+         <select name = "dropdown">
+            <option value = "std">std</option>
+            <option value = "turbo">turbo</option>
+         </select>
+ 
+ 
+ <p>Door Number:</p>
+ 
+         <select name = "dropdown">
+            <option value = "two">2</option>
+            <option value = "four">4</option>
+         </select>
+ 
+ 
+ <p>Car Body:</p>
+ 
+         <select name = "dropdown">
+            <option value = "convertible">convertible</option>
+            <option value = "hatchback">hatchback</option>
+             <option value = "sedan">sedan</option>
+            <option value = "wagon">wagon</option>
+         </select>
+
+ 
+ <p>Drivewheel:</p>
+ 
+         <select name = "dropdown">
+            <option value = "rwd">Rear Wheel drve</option>
+            <option value = "fwd">Front Wheel drive</option>
+            <option value = "4wd">4 Wheel drive</option>
+         </select>
+ 
+
+<p>Engine Location:</p>
+
+         <select name = "dropdown">
+            <option value = "front">front</option>
+            <option value = "rear">rear</option>
+         </select>
+
+
+<p>Wheelbase:</p>
+<form >
+<input type = "Number" name = "wheelbase" />
+         <br>
+
+<p>Car length:</p>
+
+<input type = "Number" name = "carlength" />
+         <br>
+
+
+<p>Car Width</p>
+
+<input type = "Number" name = "carwidth" />
+         <br>
+
+
+<p>Car Height:</p>
+
+<input type = "Number" name = "carheight" />
+         <br>
+
+
+<p>Curb Weight</p>
+
+<input type = "Number" name = "curbweight" />
+         <br>
+
+
+<P>Engine Type</P>
+
+         <select name = "dropdown">
+            <option value = "l">l</option>
+            <option value = "ohc">ohc</option>
+            <option value = "ohcv">ohcv</option>
+            <option value = "dohc">dohc</option>
+             <option value = "dohcv">dohcv</option>
+            <option value = "rotor">rotor</option>
+             <option value = "ohcf">ohcf</option>
+            <option value = ""></option>
+         </select>
+ 
+
+ <p>Cylinder Number:</p>
+ 
+         <select name = "dropdown">
+            <option value = "three">3</option>
+            <option value = "four">4</option>
+            <option value = "five">5</option>
+            <option value = "six">6</option>
+            <option value = "eight">8</option>
+            <option value = "twelve">12</option>
+         </select>
+ 
+
+<p>Engine size:</p>
+
+<input type = "Number" name = "enginesize" />
+         <br>
+
+
+<p>Fuel system:</p>
+
+         <select name = "dropdown">
+            <option value = "mpfi">mpfi</option>
+            <option value = "2bbl">2bbl</option>
+            <option value = "mfi">mfi</option>
+            <option value = "1bbl">1bbl</option>
+            <option value = "spfi">spfi</option>
+            <option value = "idi">idi</option>
+            <option value = "spdi">spdi</option>
+
+         </select>
+ 
+
+<p>Bore ratio:</p>
+
+<input type = "Number" name = "boreratio" />
+         <br>
+
+
+<p>Stroke:</p>
+
+<input type = "Number" name = "stroke" />
+         <br>
+
+
+<p>Compression Ratio:</p>
+
+<input type = "Number" name = "compressionratio" />
+         <br>
+
+
+<p>Horsepower:</p>
+
+<input type = "Number" name = "horsepower" />
+         <br>
+
+<p>PeakRPM:</p>
+<input type = "Number" name = "peakrpm" />
+         <br>
+
+<p>City Miles per Gallon</p>
+
+<input type = "Number" name = "citympg" />
+         <br>
+
+<p>Highway Miles per Gallon</p>
+<input type = "Number" name = "highwaympg" />
+         <br>
+
+
+	<button type="submit" class="btn btn-primary btn-block btn-large">Predict Car Price</button>
+</form>
+</body>
+
+</html>
+
+
+
+
+
+
+
